@@ -8,7 +8,20 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include xf/port/stm32cube-cmsis-freertos/subdir.mk
+-include xf/port/idf-stm32cube/subdir.mk
+-include xf/port/idf-qt/subdir.mk
+-include xf/port/default-qt/subdir.mk
+-include xf/port/default-idf/subdir.mk
+-include xf/port/default-cmsis-os/subdir.mk
+-include xf/port/default/subdir.mk
+-include xf/port/active-qt/subdir.mk
+-include xf/core/subdir.mk
 -include startup/subdir.mk
+-include platform/f7-disco-gcc/mcu/hal/subdir.mk
+-include platform/f7-disco-gcc/mcu/critical/subdir.mk
+-include platform/f7-disco-gcc/ext-26pin/subdir.mk
+-include platform/f7-disco-gcc/board/subdir.mk
 -include Src/subdir.mk
 -include Drivers/STM32F7xx_HAL_Driver/Src/subdir.mk
 -include subdir.mk
