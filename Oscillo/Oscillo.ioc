@@ -1,7 +1,9 @@
 #MicroXplorer Configuration settings - do not modify
 ADC3.Channel-0\#ChannelRegularConversion=ADC_CHANNEL_0
 ADC3.Channel-IN0=ADC_CHANNEL_0
-ADC3.IPParameters=Channel-IN0,Channel-0\#ChannelRegularConversion
+ADC3.ExternalTrigConv=ADC_EXTERNALTRIGCONV_T1_CC1
+ADC3.ExternalTrigConvEdge=ADC_EXTERNALTRIGCONVEDGE_RISINGFALLING
+ADC3.IPParameters=Channel-IN0,Channel-0\#ChannelRegularConversion,ExternalTrigConv,ExternalTrigConvEdge
 FMC.CASLatency1=FMC_SDRAM_CAS_LATENCY_3
 FMC.ExitSelfRefreshDelay1=7
 FMC.IPParameters=CASLatency1,SDClockPeriod1,SDClockPeriod2,ReadBurst1,ReadBurst2,LoadToActiveDelay1,ExitSelfRefreshDelay1,SelfRefreshTime1,RowCycleDelay1,RowCycleDelay2,WriteRecoveryTime1,RPDelay1,RPDelay2,RCDDelay1
@@ -1273,7 +1275,7 @@ SPI2.Mode=SPI_MODE_MASTER
 SPI2.VirtualType=VM_MASTER
 TIM1.Channel-Output\ Compare1\ No\ Output=TIM_CHANNEL_1
 TIM1.IPParameters=Channel-Output Compare1 No Output,Prescaler,Period,OCMode_1,Pulse-Output Compare1 No Output
-TIM1.OCMode_1=TIM_OCMODE_ACTIVE
+TIM1.OCMode_1=TIM_OCMODE_TOGGLE
 TIM1.Period=100
 TIM1.Prescaler=168
 TIM1.Pulse-Output\ Compare1\ No\ Output=1
