@@ -17,6 +17,8 @@ extern "C" void  HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim){
 	//volatile uint32_t value = HAL_ADC_GetValue(&hadc3);
 	//value++;
 
+	uint32_t value = 2;
+
 	/*static bool on = false;
 	if(on)
 	{
