@@ -23,7 +23,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "xf/xf.h"
+#include "app/factory.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -164,8 +165,10 @@ int main(void)
   MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_ADC_Start_IT(&hadc3);
-  HAL_TIM_OC_Start_IT(&htim1,TIM_CHANNEL_1);
+  XF_initialize(10);
+  Factory_initialize();
+  Factory_build();
+  XF_exec();
 
   /* USER CODE END 2 */
 

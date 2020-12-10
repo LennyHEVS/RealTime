@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>Oscillo</name>
-	<comment />
+	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -27,6 +27,16 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>app</name>
+			<type>2</type>
+			<location>C:/Users/favre/3emeHES/PTR/RealTime/work/src/app</location>
+		</link>
+		<link>
+			<name>event</name>
+			<type>2</type>
+			<location>C:/Users/favre/3emeHES/PTR/RealTime/work/src/event</location>
+		</link>
+		<link>
 			<name>mdw</name>
 			<type>2</type>
 			<location>C:/Users/favre/3emeHES/PTR/RealTime/work/src/mdw</location>
@@ -35,6 +45,11 @@
 			<name>platform</name>
 			<type>2</type>
 			<location>C:/Users/favre/3emeHES/PTR/RealTime/work/src/platform</location>
+		</link>
+		<link>
+			<name>ui-gen</name>
+			<type>2</type>
+			<location>C:/Users/favre/3emeHES/PTR/RealTime/work/src/ui-gen</location>
 		</link>
 		<link>
 			<name>xf</name>
