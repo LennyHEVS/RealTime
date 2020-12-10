@@ -176,6 +176,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
 	  //HAL_ADC_Start_IT(&hadc3);
 	  //HAL_Delay(2000);
 
