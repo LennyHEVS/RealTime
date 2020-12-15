@@ -8,10 +8,13 @@
 #include "stm32f7xx_hal.h"
 #include "main.h"
 #include "platform/f7-disco-gcc/board/buttonscontroller.h"
+#include "app/factory.h"
 
 extern "C" void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef * hadc) {
 	volatile uint32_t value = HAL_ADC_GetValue(hadc);
-	value++;
+	static uint32_t index = 0;
+	Factory::adcValuesBuffer[index] = value;
+	index = (index+1)%ADC_VALUES_BUFFER_SIZE;
 }
 
 extern "C" void  HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim){

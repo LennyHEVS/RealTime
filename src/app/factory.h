@@ -32,21 +32,21 @@ public:
     static FrequencyGenerator& getFrequencyGenerator();
     static oscilloscope::FreqGenController& getFreqGenController();
 
+#define ADC_VALUES_BUFFER_SIZE 800
+
+    static uint16_t adcValuesBuffer[ADC_VALUES_BUFFER_SIZE];
+
 #if defined(ENABLE_SIGGEN_PWMGENERATOR) && (ENABLE_SIGGEN_PWMGENERATOR != 0)
     static siggen::PwmGenerator & pwmGenerator();       ///< PWM signal generator
 #endif // ENABLE_SIGGEN_PWMGENERATOR
 
 protected:
 
-#define ADC_VALUES_BUFFER_SIZE 80
-
     static oscilloscope::Controller _oscilloscopeController;
     static oscilloscope::Gui _gui;
     static external::FrequencyGenerator _fgen;
     static oscilloscope::FreqGenController _fgenctrl;
     static ButtonsController _bc;
-
-    static uint16_t adcValuesBuffer[ADC_VALUES_BUFFER_SIZE];
 };
 
 #endif // __cplusplus

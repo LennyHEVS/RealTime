@@ -47,7 +47,8 @@ Src/stm32f7xx_it.o: ../Src/stm32f7xx_it.c \
  C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
- C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Inc/stm32f7xx_it.h
+ C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Inc/stm32f7xx_it.h \
+ c:\users\favre\3emehes\ptr\realtime\work\src\xf\port\port-functions.h
 
 C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Inc/main.h:
 
@@ -146,3 +147,5 @@ C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Drivers/STM32F7xx_HAL_Driver/In
 C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
 
 C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Inc/stm32f7xx_it.h:
+
+c:\users\favre\3emehes\ptr\realtime\work\src\xf\port\port-functions.h:

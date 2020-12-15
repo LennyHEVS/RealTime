@@ -93,6 +93,37 @@ void Controller::onButtonTimeMinusPressed()
 void Controller::doShowAnalogSignal()
 {
     // TODO: Call gui().drawGraphPoints() with the appropriate data.
+	uint16_t nSamples = 0;
+	float scale = 448;
+	switch(_tdivValue)
+	{
+		case TDIV_500us:
+			nSamples = 40;
+			scale = (float)scale/nSamples;
+			break;
+		case TDIV_1ms:
+			nSamples = 80;
+			scale = (float)scale/nSamples;
+			break;
+		case TDIV_2ms:
+			nSamples = 160;
+			scale = (float)scale/nSamples;
+			break;
+		case TDIV_5ms:
+			nSamples = 400;
+			scale = (float)scale/nSamples;
+			break;
+		case TDIV_10ms:
+			nSamples = 800;
+			scale = (float)scale/nSamples;
+			break;
+		default:
+			nSamples = 0;
+			scale = 1;
+			break;
+	}
+
+	gui().drawGraphPoints(_adcValuesBuffer,nSamples,scale);
 }
 
 std::string Controller::getText(TDivValue tdivValue)
