@@ -98,23 +98,23 @@ void Controller::doShowAnalogSignal()
 	switch(_tdivValue)
 	{
 		case TDIV_500us:
-			nSamples = 40;
-			scale = (float)scale/nSamples;
-			break;
-		case TDIV_1ms:
 			nSamples = 80;
 			scale = (float)scale/nSamples;
 			break;
-		case TDIV_2ms:
+		case TDIV_1ms:
 			nSamples = 160;
 			scale = (float)scale/nSamples;
 			break;
+		case TDIV_2ms:
+			nSamples = 320;
+			scale = (float)scale/nSamples;
+			break;
 		case TDIV_5ms:
-			nSamples = 400;
+			nSamples = 800;
 			scale = (float)scale/nSamples;
 			break;
 		case TDIV_10ms:
-			nSamples = 800;
+			nSamples = 1600;
 			scale = (float)scale/nSamples;
 			break;
 		default:
