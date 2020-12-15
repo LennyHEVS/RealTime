@@ -37,11 +37,16 @@ public:
 #endif // ENABLE_SIGGEN_PWMGENERATOR
 
 protected:
+
+#define ADC_VALUES_BUFFER_SIZE 80
+
     static oscilloscope::Controller _oscilloscopeController;
     static oscilloscope::Gui _gui;
     static external::FrequencyGenerator _fgen;
     static oscilloscope::FreqGenController _fgenctrl;
     static ButtonsController _bc;
+
+    static uint16_t adcValuesBuffer[ADC_VALUES_BUFFER_SIZE];
 };
 
 #endif // __cplusplus

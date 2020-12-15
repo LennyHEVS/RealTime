@@ -11,6 +11,7 @@ oscilloscope::Gui Factory::_gui;
 external::FrequencyGenerator Factory::_fgen;
 oscilloscope::FreqGenController Factory::_fgenctrl;
 ButtonsController Factory::_bc;
+uint16_t Factory::adcValuesBuffer[ADC_VALUES_BUFFER_SIZE];
 
 void Factory_initialize()
 {
@@ -30,7 +31,7 @@ Factory::Factory()
 // static
 void Factory::initialize()
 {
-    //getOscilloscopeController().initialize(getGui(), adcValuesBuffer, ADC_VALUES_BUFFER_SIZE);
+    getOscilloscopeController().initialize(getGui(), adcValuesBuffer, ADC_VALUES_BUFFER_SIZE);
     getGui().initialize();
     getFrequencyGenerator().initialize();
     getFreqGenController().initialize(getGui());
