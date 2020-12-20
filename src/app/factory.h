@@ -32,7 +32,7 @@ public:
     static FrequencyGenerator& getFrequencyGenerator();
     static oscilloscope::FreqGenController& getFreqGenController();
 
-#define ADC_VALUES_BUFFER_SIZE 1600
+#define ADC_VALUES_BUFFER_SIZE 8000
 
     static uint16_t adcValuesBuffer[ADC_VALUES_BUFFER_SIZE];
 

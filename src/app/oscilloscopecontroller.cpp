@@ -5,6 +5,7 @@
 #include "gui.h"
 #include "sig-gen/pwmgenerator.h"
 #include "oscilloscopecontroller.h"
+#include "app/factory.h"
 
 namespace oscilloscope {
 
@@ -98,23 +99,23 @@ void Controller::doShowAnalogSignal()
 	switch(_tdivValue)
 	{
 		case TDIV_500us:
-			nSamples = 80;
+			nSamples = ADC_VALUES_BUFFER_SIZE/20;
 			scale = (float)scale/nSamples;
 			break;
 		case TDIV_1ms:
-			nSamples = 160;
+			nSamples = ADC_VALUES_BUFFER_SIZE/10;
 			scale = (float)scale/nSamples;
 			break;
 		case TDIV_2ms:
-			nSamples = 320;
+			nSamples = ADC_VALUES_BUFFER_SIZE/5;
 			scale = (float)scale/nSamples;
 			break;
 		case TDIV_5ms:
-			nSamples = 800;
+			nSamples = ADC_VALUES_BUFFER_SIZE/2;
 			scale = (float)scale/nSamples;
 			break;
 		case TDIV_10ms:
-			nSamples = 1600;
+			nSamples = ADC_VALUES_BUFFER_SIZE;
 			scale = (float)scale/nSamples;
 			break;
 		default:
