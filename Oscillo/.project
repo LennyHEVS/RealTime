@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>Oscillo</name>
-	<comment />
+	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -26,6 +26,11 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
 	<linkedResources>
+		<link>
+			<name>Source</name>
+			<type>2</type>
+			<location>C:/Users/favre/3emeHES/PTR/RealTime/work/Oscillo/Middlewares/Third_Party/FreeRTOS/Source</location>
+		</link>
 		<link>
 			<name>app</name>
 			<type>2</type>
